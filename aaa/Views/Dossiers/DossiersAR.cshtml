@@ -1,0 +1,74 @@
+﻿@model IEnumerable<aaa.Models.Dossier>
+
+@{
+    Layout= null;
+}
+ <head>
+                 <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/style_employes.css">
+  </head>
+  <body><html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerer les dossier en etat creative</title>
+        <link rel="stylesheet" href="~/css/dossiers_tout les etat.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    </head>
+    
+    <body>
+        <div class="table">
+            <div class="table_header">
+                        <h1><a asp-controller="Home" asp-action="Index">CE<span>RI</span>ST</a></h1>
+
+                <h3 style="color:rgb(0, 140, 255) ;">Dossiers_attende_reponse</h3><br><br>
+                 <form asp-action="DossiersAR" method="get">
+                <div> <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" /><input type="submit" value="Search" class="btn btn-default" /></div>
+                </form> 
+                <div></div>
+                <div></div>
+            </div>
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr><h3>
+                            <th><h3>Numero_retraite</h3></th>  
+                           <th><h3>Nom</h3></th>
+                           <th><h3>prenom</h3></th>
+                            <th><h3>Completez les informations</h3></th>
+                            <th><h3>Envoye a l'etape suivante</h3></th>
+                            <th><h3>Action</h3></th>
+                            <th><h3>Action</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model) {
+                      <tr>
+                        <td>@Html.DisplayFor(modelItem => item.DossierId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.EmployeeName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.EmployeePrenom)</td>
+                        
+                        <td> <button><a class="fa-solid fa-pen-to-square" asp-action="DetailsAttestionDeSalaires" asp-route-id="@item.DossierId" target="_blank"></a></button> </td>
+                        <td> <button><a class="fa-solid fa-pen-to-square" asp-action="DetailsAttestionTravails" asp-route-id="@item.DossierId" target="_blank"></a></button> </td>
+                        <td><button ><a class="fa-solid fa-circle-plus"href="" target="_blank"></a></button></td> 
+                        <td> 
+                          <button><a class="fa-solid fa-pen-to-square" asp-controller="Dossiers1" asp-action="Edit" target="_blank"></a></button>              
+                          <button><a class="fa-solid fa-trash"asp-controller="Dossiers1" asp-action="Delete"target="_blank"></a></button>
+                         </td>
+                         </tr>            
+                         }
+                                 
+                </table>
+            </div>
+            
+        </div>
+    </body>
+    
+    </html>   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>

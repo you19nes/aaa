@@ -1,0 +1,66 @@
+﻿@model IEnumerable<aaa.Models.Dossier>
+@{
+    Layout= null;
+}
+
+
+
+    <head>
+        
+        <link rel="stylesheet" href="~/css/dossiers_tout les etat.css"/>
+        <link rel="stylesheet" href="~/css/style_employes.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    </head>
+    
+ 
+        <div class="table">
+            <div class="table_header">
+                <h1><a asp-controller="Home" asp-action="Index">CE<span>RI</span>ST</a></h1>
+                <h3 style="color:rgb(0, 140, 255) ;">Dossier_post-réponse</h3> 
+                 <form asp-action="DossiersNT" method="get">
+                <div> <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" /><input type="submit" value="Search" class="btn btn-default" /></div>
+                </form> 
+                <div></div>
+                </div>
+                <br><br> 
+                 <table >
+                  <thead>
+                      <tr><h3>
+                          <th><h3>Numero_retraite</h3></th>  
+                         <th><h3>Nom</h3></th>
+                         <th><h3>prenom</h3></th>
+                          <th><h3> Imprimer les attestations</h3></th>
+                          <th><h3>Consulter_attestation_cessation</h3></th>
+                          <th><h3>Action</h3></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                   
+                        
+                    
+                       @foreach (var item in Model)
+                            {
+                            @for(int i=0;  i <10; i++)
+                    {
+
+                              <tr>
+                        <td>@Html.DisplayFor(modelItem => item.DossierId)@i</td>
+                        <td>@Html.DisplayFor(modelItem => item.EmployeePrenom)@i</td>
+                        <td>@Html.DisplayFor(modelItem => item.EmployeeName)@i</td>
+                           <td><button ><a class="fa-solid fa-circle-plus"href="" target="_blank"></a></button></td> 
+
+                        <td> <button><a @i class="fa-solid fa-pen-to-square" asp-action="DetailsAttestionDeCesseison" asp-route-id="@item.DossierId" target="_blank"></a></button> </td>
+                        <td> 
+                          <button><a @i class="fa-solid fa-pen-to-square"asp-controller="Dossiers1" asp-action="Edit" asp-route-id="@item.DossierId"target="_blank"></a></button>              
+                        <button><a @i class="fa-solid fa-trash"asp-controller="Dossiers1" asp-action="Delete" asp-route-id="@item.DossierId" target="_blank"></a></button>
+                         </td>
+                         </tr>  
+                         
+                            }
+                            }
+                  
+       
+               
+            </div>
+       
+        </div>

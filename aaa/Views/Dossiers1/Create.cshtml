@@ -1,0 +1,254 @@
+﻿@model Dossier
+<head>
+     <link rel="stylesheet" href="~/css/Ajoute employe.css">
+</head>
+
+                       <form id="ApplicantForm" enctype="multipart/form-data" asp-action="CreateAttestionTravaill">                             
+                                    <div class="wrapper">
+                                       <div class="title">
+                                           Ajoute un Employes !
+                                        </div>
+                                         <div class="form">
+
+                                      
+                                       
+                                    
+
+                                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <div class="inputfield">
+                                               <label asp-for="EmployeeName" ></label>
+                                               <input asp-for="EmployeeName" class="input"/>
+                                              </div>  
+                                              <div style="padding-left:150px">
+                                          <span asp-validation-for="EmployeeName" class="text-danger"></span>
+                                          </div><br />
+
+                                         
+                                          <div class="inputfield">
+                                              <label  asp-for="EmployeePrenom"></label>
+                                              <input asp-for="EmployeePrenom" class="input">
+                                           </div>  
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="EmployeePrenom" class="text-danger"></span>
+                                          </div><br />
+
+                                          
+                                          <div class="inputfield">
+                                           <label asp-for="Address" ></label>
+                                           <input asp-for="Address"  class="input">
+                                          </div> 
+                                          <div style="padding-left:150px">
+                                          <span asp-validation-for="Address" class="text-danger"></span>
+                                          </div><br />
+
+                                          
+                                          <div class="inputfield">
+                                            <label asp-for="DeteNaissance"></label>
+                                            <input asp-for="DeteNaissance" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="DeteNaissance" class="text-danger"></span>
+                                          </div><br />
+
+                                          <div class="inputfield">
+                                            <label asp-for="Adressedenaissence"></label>
+                                            <input asp-for="Adressedenaissence" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="Adressedenaissence" class="text-danger"></span>
+                                          </div><br />
+                                          
+
+                                         <div class="inputfield">
+                                           <label asp-for="NaissanceWilaya"></label>
+                                           <select asp-for="NaissanceWilaya" class="form-control" asp-items="new SelectList(ViewBag.wilaia)"></select>
+                                         </div> 
+                                          <div style="padding-left:150px">
+                                          <span asp-validation-for="NaissanceWilaya" class="text-danger"></span>
+                                          </div><br />
+
+                                          <div class="inputfield">
+                                           <label asp-for="Titredecivilite"></label>
+                                           <select asp-for="Titredecivilite" class="form-control" asp-items="new SelectList(ViewBag.civilite)"></select>
+                                         </div> 
+                                          <div style="padding-left:150px">
+                                          <span asp-validation-for="Titredecivilite" class="text-danger"></span>
+                                          </div><br />  
+                                                    
+                                          <div class="inputfield">
+                                            <label asp-for="Lemployeursoussigné"></label>
+                                            <input asp-for="Lemployeursoussigné" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="Lemployeursoussigné" class="text-danger"></span>
+                                          </div><br />
+                                                   
+                                          <div class="inputfield">
+                                            <label asp-for="NSSEMPLOYEUR"></label>
+                                            <input asp-for="NSSEMPLOYEUR" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="NSSEMPLOYEUR" class="text-danger"></span>
+                                          </div><br />
+
+                                          <div class="inputfield">
+                                            <label asp-for="NASASSURE"></label>
+                                            <input asp-for="NASASSURE" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="NASASSURE" class="text-danger"></span>
+                                          </div><br />
+
+
+                                          <div class="inputfield">
+                                           <label asp-for="Qualite"></label>
+                                           <select asp-for="Qualite" class="form-control" asp-items="new SelectList(ViewBag.Qualite)"></select>
+                                         </div> 
+                                          <div style="padding-left:150px">
+                                          <span asp-validation-for="Qualite" class="text-danger"></span>
+                                          </div><br /> 
+                                                 
+                                          <div class="inputfield">
+                                            <label asp-for="DubutTravail"></label>
+                                            <input asp-for="DubutTravail" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="DubutTravail" class="text-danger"></span>
+                                          </div><br />
+                                                
+                                          <div class="inputfield">
+                                            <label asp-for="FinTravail"></label>
+                                            <input asp-for="FinTravail" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="FinTravail" class="text-danger"></span>
+                                          </div><br />
+                                                    
+                                          <div class="inputfield">
+                                            <label asp-for="NumeroAllocationFamilailes"></label>
+                                            <input asp-for="NumeroAllocationFamilailes" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="NumeroAllocationFamilailes" class="text-danger"></span>
+                                          </div><br />
+                                                   
+                                          <div class="inputfield">
+                                            <label asp-for="NumeroAllocationAssure"></label>
+                                            <input asp-for="NumeroAllocationAssure" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="NumeroAllocationAssure" class="text-danger"></span>
+                                          </div><br />
+                                                   
+                                          <div class="inputfield">
+                                            <label asp-for="NumeroSocialesFamilailes"></label>
+                                            <input asp-for="NumeroSocialesFamilailes" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="NumeroSocialesFamilailes" class="text-danger"></span>
+                                          </div><br />
+                                                  
+                                          <div class="inputfield">
+                                            <label asp-for="NumeroSocialesAssure"></label>
+                                            <input asp-for="NumeroSocialesAssure" class="input">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="NumeroSocialesAssure" class="text-danger"></span>
+                                          </div><br />
+
+                                          <div class="inputfield">
+                                            <label asp-for="nom" margin-left: 20px;"></label>
+                                            <input asp-for="nom" style=" >
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="nom" class="text-danger"></span>
+                                          </div><br />
+                                               
+                                            
+                                           <div class="inputfield">
+                                            <label asp-for="pre" style=" margin-left: 20px;"></label>
+                                            <input asp-for="pre" >
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="pre" class="text-danger"></span>
+                                          </div><br />
+                                          
+                                          <div class="inputfield">
+                                            <label asp-for="ParronPere"  style=" margin-left: 20px;"></label>
+                                            <input asp-for="ParronPere">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="ParronPere" class="text-danger"></span>
+                                          </div><br />
+
+                                          <div class="inputfield">
+                                            <label asp-for="Parronmere" style=" margin-left: 20px;"></label>
+                                            <input asp-for="Parronmere" >
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="Parronmere" class="text-danger"></span>
+                                          </div><br />
+                                          
+                                          
+                                          <div class="inputfield">
+                                            <label asp-for="makan" style=" margin-left: 20px;"></label>
+                                            <input asp-for="makan" >
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="makan" class="text-danger"></span>
+                                          </div><br />
+
+                                          <div class="inputfield">
+                                            <label asp-for="wilaia"  style=" margin-left: 20px;"></label>
+                                            <input asp-for="wilaia">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="wilaia" class="text-danger"></span>
+                                          </div><br />
+
+                                           <div class="inputfield">
+                                            <label asp-for="mihna"  style=" margin-left: 20px;"></label>
+                                            <input asp-for="mihna">
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="mihna" class="text-danger"></span>
+                                          </div><br />
+                                      
+                                        <div class="inputfield">
+                                            <label asp-for="onwan" style=" margin-left: 20px;"></label>
+                                            <input asp-for="onwan" >
+                                          </div> 
+                                           <div style="padding-left:150px">
+                                          <span asp-validation-for="onwan" class="text-danger"></span>
+                                          </div><br />
+                                        
+                                          <div class="inputfield">
+                                           <label asp-for="safha" style=" margin-left: 20px;"></label>
+                                           <select asp-for="safha"  asp-items="new SelectList(ViewBag.safha)"></select>
+                                         </div> 
+                                          <div style="padding-left:150px">
+                                          <span asp-validation-for="safha" class="text-danger"></span>
+                                          </div><br />
+                                          
+                                           <div class="inputfield">
+                                           <label asp-for="Etat" style=" margin-left: 20px;"></label>
+                                           <select asp-for="Etat"  asp-items="new SelectList(ViewBag.etat)"></select>
+                                         </div> 
+                                          <div style="padding-left:150px">
+                                          <span asp-validation-for="safha" class="text-danger"></span>
+                                          </div><br />
+                                          
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

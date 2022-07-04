@@ -1,0 +1,59 @@
+﻿@model RegisterViewModel
+
+@{
+    Layout= null;
+}
+<div class="wrapper">
+            <div class="title">
+           Ajoute un compte !
+            </div>
+            <div class="form">
+                        <form asp-action="Register" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+               <div class="inputfield">
+                  <label>Nom</label>
+                  <input asp-for="name" class="input">
+                  <span asp-validation-for="name" class="text-danger"></span>
+              
+              </div>  
+                <div class="inputfield">
+                  <label>Prénom</label>
+                  <input asp-for="prenome" lass="input">
+                  <span asp-validation-for="prenome" class="text-danger"></span>
+               </div>  
+               <div class="inputfield">
+                  <label>Mot de passe</label>
+                  <input asp-for="Password" class="input">
+                <span asp-validation-for="Password" class="text-danger"></span>
+              
+              </div>  
+              <div class="inputfield">
+                  <label>Confirmer le mot de passe</label>
+                  <input asp-for="ConfirmPassword" class="input">
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+               </div> 
+                
+                <div class="inputfield">
+                  <label>Adresse email</label>
+                  <input asp-for="EmailAddress" class="input">
+                  <span asp-validation-for="EmailAddress" class="text-danger"></span>
+
+               </div> 
+            
+              
+            
+                 
+              <div class="inputfield">
+                <input type="submit" value="Enregistrer " class="btn">
+              </div>
+              </form>
+            </div>
+        </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+                 

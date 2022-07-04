@@ -1,0 +1,568 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Gerer les employes</title>
+          <link rel="stylesheet" href="/file/css/Ajoute employe.css">
+
+        
+    </head>
+
+    <body>    
+     
+        <div class="wrapper">
+            <div class="title">
+           Ajoute un Employes !
+            </div>
+            <div class="form">
+             
+               <div class="inputfield">
+                  <label>Nom</label>
+                  <input type="text" class="input">
+               </div>  
+                <div class="inputfield">
+                  <label>Prénom</label>
+                  <input type="text" class="input">
+               </div>  
+               <div class="inputfield">
+                <label>Adresse</label>
+                <input type="text" class="input">
+             </div>  
+               <div class="inputfield">
+                <label>Date de naissence</label>
+                <input type="date" class="input">
+             </div>  
+             <div class="inputfield">
+              <label>Adresse de naissence</label>
+              <input type="date" class="input">
+           </div>  
+             <div class="inputfield">
+              <label>Wilaya de naissence</label>
+              <input type="text" class="input">
+           </div> 
+           <div class="inputfield">
+            <label>Titre de civilite</label>
+            <div class="custom_select">
+              <select>
+                <option value="">...</option> 
+                <option value="">Mr</option>              
+                <option value="female">Mme</option>
+                <option value="female">Melle</option>
+              </select>
+            </div>
+         </div> 
+         <div class="inputfield">
+                
+          <label>L'employeur soussigné </label>
+          <input type="text" class="input">
+       </div>  
+           <div class="inputfield">
+            <label>N°S S EMPLOYEUR</label>
+            <input type="" class="input">
+         </div> 
+         <div class="inputfield">
+          <label>N°A S ASSURE</label>
+          <input type="" class="input">
+       </div> 
+       <div class="inputfield">
+        <label>Grade d'employe</label>
+        <div class="custom_select">
+          <select>
+            <option value="">...</option> 
+            <option value="">Agent d’exécution</option>              
+            <option value="female">Cadre Moyen</option>
+            <option value="female">Cadre Supérieur</option>
+            <option value="female">Cardre Dirgeant</option>
+          </select>
+        </div>
+     </div> 
+     <div class="inputfield">
+      <label>Qualite</label>
+      <input type="" class="input">
+   </div> 
+             <div class="inputfield">
+              <label>Debut de travail</label>
+              <input type="" class="input">
+           </div>  
+           <div class="inputfield">
+            <label>Fin de travail</label>
+            <input type="" class="input">
+         </div>  
+           <div class="inputfield">
+            <label>Numero d'alloction familiales d'Employeur</label>
+            <input type="number" class="input">
+         </div> 
+         <div class="inputfield">
+          <label>Numero d'alloction familiales d'assure</label>
+          <input type="number" class="input">
+       </div>  
+       <div class="inputfield">
+        <label>Numero d'alloction sosiales d'Employeur</label>
+        <input type="number" class="input">
+     </div> 
+     <div class="inputfield">
+      <label>Numero d'alloction sociales d'assure </label>
+      <input type="number" class="input">
+   </div>  
+   <div class="inputfield">
+    <input type="text" class="input">
+    <label style=" margin-left: 20px;">الإسم</label>
+ </div>  
+ <div class="inputfield">
+  <input type="text" class="input">
+  <label style=" margin-left: 20px;">اللقب </label>
+</div>  
+<div class="inputfield">
+  <input type="text" class="input">
+  <label style=" margin-left: 20px;"> الإسم الكامل للاب </label>
+</div>  
+<div class="inputfield">
+  <input type="text" class="input">
+  <label style=" margin-left: 20px;"> الإسم الكامل للام </label>
+</div> 
+<div class="inputfield">
+  <input type="text" class="input">
+  <label style=" margin-left: 20px;">مكان الميلاد</label>
+</div> 
+<div class="inputfield">
+  <input type="text" class="input">
+  <label style=" margin-left: 20px;">ولاية الميلاد</label>
+</div> 
+<div class="inputfield">
+  <input type="text" class="input">
+  <label style=" margin-left: 20px;">المهنة</label>
+</div> 
+<div class="inputfield">
+  <input type="text" class="input">
+  <label style=" margin-left: 20px;">العنوان</label>
+</div> 
+<div class="inputfield">
+  
+  <div class="custom_select">
+    <select>
+      <option value="">...</option>          
+      <option value="female">عون تنفيذ </option>
+      <option value="female"> اطار</option>
+      <option value="female">اطار سامي </option>
+      <option value="female">اطار  </option>
+    </select>
+  </div>
+  <label style=" margin-left: 20px;">الصفة</label>
+</div> 
+<hr><br><br>
+<div class="title">
+  INFORMATION D'ATTESTATION DE TRAVAIL !
+   </div>
+
+          <h3 style="text-align:center;"></h3><br>
+         <div>  
+           <div class="inputfield">
+          
+            <label>Annee</label>
+            <input type="number" class="input" id="x"max="2025"min="0">
+               </div>    
+          <p style="text-align: center;">Periode :</p><br>
+          <div class="inputfield">
+         <label> De</label>
+          <input type="date" class="input"id="y1">
+         <label>  Au</label>
+          <input type="date" class="input"id="y2">
+       </div> 
+       <br><br>
+      </div>
+       <div>
+         <div class="inputfield">
+                         
+        <label>Salaire semi a retraite </label>
+        <input type="text" class="input"id="z">
+        <label>Designation de travail </label>
+        <input type="text" class="input"id="a">
+      
+   </div> 
+        <div class="inputfield">
+       
+        <label>Designation de l'emploi </label>
+        <input type="text" class="input"id="b">
+        <label>L'employeur soussigné </label>
+        <input type="text" class="input"id="c">
+     </div> 
+    </div><br>
+    <div class="inputfield">
+      <input type="submit" value="Ajoute " class="btn"onclick="creer1()">
+    </div>
+    <div id="all">
+
+   <table><tr></tr>
+  <th class="champ">Annee</th>
+  <th class="champ">Periode_debut</th>
+  <th class="champ">Periode _fin</th>
+  <th class="champ">Salaire semi retraite</th>
+  <th class="champ">Designation de travail</th>
+  <th class="champ">Designation de l'emploi</th>
+  <th class="champ">L'employeur soussigné</th>
+</tr>
+</table>
+</div>
+<div class="title">
+<br><br><hr><br>
+    
+      INFORMATION D'ATTESTATION DE SALAIRE !
+     <br><br>
+      
+ 
+   
+  
+    <div id="all2">
+ 
+    </div> 
+    </div>  
+    <div class="inputfield">
+      
+      <div>
+        <h3>Annee 01</h3><br>
+        <table>
+        <tr>
+        <th>Periode referrence</th>
+        <th>Salaire soumis a cotisation</th>
+      </tr>
+       
+       <tr>
+       <td><input type="text" class="input"></td>
+       <td><input type="text" class="input"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+       <tr>
+        <td><input type="text" class="input"></td>
+        <td><input type="text" class="input"></td>
+       </tr>
+      
+       
+      </table>
+    </div>
+
+    <div>
+      <h3>Annee 02</h3><br>
+      <table>
+      <tr>
+      <th>Periode referrence</th>
+      <th>Salaire soumis a cotisation</th>
+    </tr>
+     
+     <tr>
+     <td><input type="text" class="input"></td>
+     <td><input type="text" class="input"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+     <tr>
+      <td><input type="text" class="input"></td>
+      <td><input type="text" class="input"></td>
+     </tr>
+    
+     
+    </table>
+  </div>
+
+  <div>
+    <h3>Annee 03</h3><br>
+    <table>
+    <tr>
+    <th>Periode referrence</th>
+    <th>Salaire soumis a cotisation</th>
+  </tr>
+   
+   <tr>
+   <td><input type="text" class="input"></td>
+   <td><input type="text" class="input"></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+   <tr>
+    <td><input type="text" class="input"></td>
+    <td><input type="text" class="input"></td>
+   </tr>
+  
+   
+  </table>
+</div>
+
+<div>
+  <h3>Annee 04</h3><br>
+  <table>
+  <tr>
+  <th>Periode referrence</th>
+  <th>Salaire soumis a cotisation</th>
+</tr>
+ 
+ <tr>
+ <td><input type="text" class="input"></td>
+ <td><input type="text" class="input"></td>
+</tr>
+<tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+
+ 
+</table>
+</div>
+
+<div>
+  <h3>Annee 05</h3><br>
+  <table>
+  <tr>
+  <th>Periode referrence</th>
+  <th>Salaire soumis a cotisation</th>
+</tr>
+ 
+ <tr>
+ <td><input type="text" class="input"></td>
+ <td><input type="text" class="input"></td>
+</tr>
+<tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+ <tr>
+  <td><input type="text" class="input"></td>
+  <td><input type="text" class="input"></td>
+ </tr>
+
+ 
+</table>
+</div>
+
+  </div>
+   
+   
+   
+  <div class="inputfield">
+    <input type="submit" value="Enregistrer " class="btn">
+  </div>
+        
+        <script>
+         
+         function creer1(){
+var xx=document.getElementById('x').value;
+var yy1 =document.getElementById('y1').value;
+var yy2 =document.getElementById('y2').value;
+var zz =document.getElementById('z').value;
+var aa =document.getElementById('a').value;
+var bb =document.getElementById('b').value;
+var cc =document.getElementById('c').value;
+var ajoute=document.getElementById('all');
+ if(x)
+ajoute.innerHTML+=`
+<table>
+    <tr id="${xx}"> 
+          
+  <td><input type="text"value="${xx}"class="champ"> </td>
+  <td><input type="text"value="${yy1}"class="champ"></td>
+  <td><input type="text"value="${yy2}"class="champ"> </td>
+  <td><input type="text"value="${zz}"class="champ"> </td>
+  <td><input type="text"value="${aa}"class="champ"> </td>
+  <td><input type="text"value="${bb}"class="champ"> </td>
+  <td><input type="text"value="${cc}"class="champ"> </td>
+
+  
+  
+ </div>     </tr>
+    </table>`
+
+}
+    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+﻿
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> signInManager
+
+  
+        <!-- // End Header // -->
+        <!-- \\ Begin Banner Section \\ -->
+        <div id="home">
+            <!--  \\ Begin banner Side -->
+            <section class="description">
+                <!-- div gauche -->
+                <div class="left">
+                    <h1>
+                        <span>BIENVENU</span>
+                        <span>SUR LA PLATEFORME</span>
+                        <span>DE LA GESTION</span>
+                        <span> DES DOSSIERS</span>
+                        <span>DES RETRAITES</span>
+                     
+                    </h1>
+                
+                    <i> <p>l'objectif de cette plateforme est de concevoir et mettre en place un système 
+                        d'information de gestion des dossiers de retraite CERIS. Afin d'éviter les problèmes évoqués lors 
+                        de la création du dossier retraite.
+                        Cette application web permet la création automatique du dossier de retraite, et facilite et organise 
+                        la gestion de ces dossiers, en facilitant l'accès à ces dossiers pour les modifier, ou les utiliser dans 
+                        des études statistiques par exemple, sans avoir besoin d'archiver document papier.</p>
+                  
+                </div></i> 
+                
+                <!-- div droite -->
+                <div class="right">
+                      <img src="~/img/logo.png" class="image_bird">
+                </div>
+            </section>
+            <!--  // End banner Side // -->
+     
+         
+        </div>
+
+        <!-- // End Banner Section // -->
+         <div class="bgcolor"></div>
+        <!-- \\ Begin Container \\ -->
+        <div id="Container">
+            <!-- \\ Begin About Section \\ -->
+           
+            <!-- // End About Section // -->
+        <!-- \\ Begin Services Section \\ -->
+        <div class="Services_sec" id="services">
+            <div class="Center">
+                <h2>Gérer les dossiers</h2>
+                <h3> <span style="color:red;">Attention</span> 
+                    <span style="color: black"> pour utiliser cette fonction l'employé doit existe déjà dans la liste des employés</span></h3>		
+               
+                <h3 style="color: rgb(0, 47, 255)">Types des dossiers :</h3>
+                <div class="Line"></div>
+                <!-- \\ Begin Services Side  \\ -->
+                <div class="Serviceside">
+
+                    <ul>
+	                    
+	                    <li class="Development"><a asp-controller="Dossiers" asp-action="Index"><h4>I. Etat creation</h4></a></li>
+                        <li class="Desdin"><a asp-controller="Dossiers" asp-action="DossiersNT"><h4>II. Attende la notification</h4></a></li>
+                        <li class="System"><a asp-controller="Dossiers" asp-action="DossiersAR"><h4>III. attende la reponse</h4></a></li>
+	                    <li class="Concept"><a asp-controller="Dossiers" asp-action="Employee"><h4>IV. état de post-réponse</h4></a></li>
+	                    <li class="Development"><a asp-controller="Dossiers" asp-action="DossiersT"><h4>V. Etat retraite</h4></a></li>
+                    </ul>
+                </div>
+                <!-- // End Services Side // -->
+            </div>                
+        </div>
+        <!-- // End Services Section // -->
+      
+        <!-- \\ Begin Contact Section \\ -->
+        <div class="Contact_sec" id="contact">
+            <div class="Contactside">
+                <div class="Center">
+                    <h2>Account</h2>
+                    <h3><span style="color:red">Remarque !</span>  Lors de votre première connexion, veuillez modifier votre mot de passe</h3>
+                    <div class="Line"></div>
+                </div>  
+
+            </div>
+
+              
+                <!-- \\ Begin Get Section \\ -->
+                <div class="Get_sec">
+                    <div class="Mid">					
+                        <!-- \\ Begin Left Side \\ -->
+                        <div class="Leftside">
+                            <form action="#">
+                                <fieldset>
+                                    <p><h3 style="color:rgb(0, 21, 255)">Nom :</h3><input type="text" value="Nemla" placeholder="name" class="field"></p>
+                                    <p><h3 style="color:rgb(0, 21, 255)">Prenom :</h3><input type="text" value="Younes" placeholder="email" class="field"></p>
+                                    <p><h3 style="color:rgb(0, 21, 255)">Email :</h3><input type="email" value="nemlayounes@gmail.com" placeholder="" class="field"></p>
+                                    <p><h3 style="color:rgb(0, 21, 255)">Role :</h3><input type="text" value="Administrateur" placeholder="" class="field"></p>
+
+                                
+                                  
+                            </form>
+                        </div>
+                        <!-- // End Left Side // -->
+                        <!-- \\ Begin Right Side \\ -->
+                        <div class="Rightside">
+                            <h3>Pour modifier votre compte clique..<a href="modifier_compte.html"target="_blank" style="
+                                text-decoration: none;">ici</a></h3>
+                              	<h2>Si vous avez un problème contacter:</h2> <br>
+                                <address class="Number">
+                           <h4>        (+213) 23.25.54.59<br></h4> 
+                                </address>	
+                                <address class="Email">
+                                    <h4><a href="mailto:syahiaoui@cerist.dz">syahiaoui@cerist.dz</a></h4> 
+                                </address>	
+                                <div class="clear"></div>
+                                <ul>
+                                    <li><a  href="https://www.facebook.com/cerist2dz/" target="_parent">
+                                        <img src="~/img/facebook-icn.png">
+                                    </a></li>
+                                    <li><a href="http://www.cerist.dz/index.php/fr/" target="_parent">
+                                        <img src="~/img/google-plus-icn.png" >
+                                    </a></li>
+                                    <li><a href="https://twitter.com/ceristdz" target="_parent">
+                                        <img src="~/img/twitter-icn.png" >
+                                    </a></li>
+                                    
+                    
+                                </ul>
+                        </div>
+                        <!-- // End Right Side // -->
+                    </div>
+                    <!-- \\ Begin Footer \\-->
+                 
+                
+                </div>
+              
+            
+            </div>
+           
+        </div>
+      
+	</div>
+	
+</div>
+
+

@@ -1,0 +1,68 @@
+﻿@model aaa.Models.AttestionDeSalaire
+
+@{
+    ViewData["Title"] = "creatmut";
+}
+
+<h1>creatmut</h1>
+
+<h4>AttestionDeSalaire</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form  asp-action="creatmut">
+            <input type="hidden" asp-for="DossierId" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DossierId" class="control-label"></label>
+                <select asp-for="DossierId" class ="form-control" asp-items="ViewBag.DossierId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttestionDeSalaireAnnee" class="control-label"></label>
+                <input asp-for="AttestionDeSalaireAnnee" class="form-control" />
+                <span asp-validation-for="AttestionDeSalaireAnnee" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PériondesD" class="control-label"></label>
+                <input asp-for="PériondesD" class="form-control" />
+                <span asp-validation-for="PériondesD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PériondesA" class="control-label"></label>
+                <input asp-for="PériondesA" class="form-control" />
+                <span asp-validation-for="PériondesA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DuréeDuTravail" class="control-label"></label>
+                <input asp-for="DuréeDuTravail" class="form-control" />
+                <span asp-validation-for="DuréeDuTravail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalaireSoumisRetenue" class="control-label"></label>
+                <input asp-for="SalaireSoumisRetenue" class="form-control" />
+                <span asp-validation-for="SalaireSoumisRetenue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DésignationDeLemploi" class="control-label"></label>
+                <input asp-for="DésignationDeLemploi" class="form-control" />
+                <span asp-validation-for="DésignationDeLemploi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesiguationDeLaClasseDallocation" class="control-label"></label>
+                <input asp-for="DesiguationDeLaClasseDallocation" class="form-control" />
+                <span asp-validation-for="DesiguationDeLaClasseDallocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,106 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> signInManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+     <meta charset="utf-8" />
+    
+    <!-- Title Tag -->
+    <title>CERIST</title>
+
+    <!-- <<Mobile Viewport Code>> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            
+    <!-- <<Attched Stylesheets>> -->
+    <link rel="stylesheet" href="~/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/media.css" type="text/css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,600italic,400italic,800,700' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="~/css/animationlogin.css">
+</head>
+<body>
+    	<br />
+    	<br />
+    	<br />
+    	<br />
+    	<br />
+    	
+        
+    <header>
+                <div class="site-logo">  
+                                
+        <h1><a asp-controller="Home" asp-action="Index">CE<span>RI</span>ST</a></h1>
+                </div>
+               <div id="mobile_sec">
+    
+                <div class="menumobile">
+                    <!-- \\ Begin Navigation \\ -->
+                    <nav class="Navigation">
+                        <ul>
+                            <li >                                
+                                <a asp-controller="Home" asp-action="Index">Acceuil</a>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                           
+                            <li>
+                                <a asp-controller="Dossiers1" asp-action="Index"> Employes</a>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                            <li>
+                                <a href="#services">Dossier</a>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                          
+                            <li>
+                                <a href="#contact">Profil</a>
+                                <span class="menu-item-bg"></span>
+                            </li>
+                          
+                       
+                            <li> 
+                                
+                                <a  asp-area="" asp-controller="Account" asp-action="Logout">Se déconnecter @User.Identity.Name<ion-icon name="log-out-outline"style="padding-left: 20px;"></ion-icon></a>
+                                <span class="menu-item-bg"></span>
+                                
+                            </li>
+                             
+                    
+                        </ul>
+                    </nav>
+                    <!-- // End Navigation // -->
+				</div>
+				</div>
+            
+            </div>
+              
+    </header>
+
+    
+            @RenderBody()
+        
+        
+
+     <footer>
+       <div class="Cntr">                
+         <p>COPYRIGHT © 2022</p>
+       </div>
+     </footer> 
+     <!--etat retret-->
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery-1.11.0.min.js"></script>
+    <script src="~/js/jquery.sudoSlider.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/global.js"></script>
+    <script  src="~/js/modernizr.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

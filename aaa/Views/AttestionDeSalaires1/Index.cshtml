@@ -1,0 +1,77 @@
+﻿@model IEnumerable<aaa.Models.AttestionDeSalaire>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttestionDeSalaireAnnee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PériondesD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PériondesA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DuréeDuTravail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalaireSoumisRetenue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DésignationDeLemploi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesiguationDeLaClasseDallocation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AttestionDeSalaireAnnee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PériondesD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PériondesA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuréeDuTravail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalaireSoumisRetenue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DésignationDeLemploi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesiguationDeLaClasseDallocation)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AttestionDeSalaireId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AttestionDeSalaireId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AttestionDeSalaireId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

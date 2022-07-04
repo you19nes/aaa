@@ -1,0 +1,49 @@
+﻿@model IEnumerable<aaa.Models.Dossier>
+
+ <head>
+     <link rel="stylesheet" href="~/css/style_employes.css">
+    <link rel="stylesheet" href="~/css/style_employes.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+    
+
+        <div class="table">
+            <div class="table_header">
+                <h3 style="color:rgb(0, 140, 255) ;">Gerer les employes</h3>
+ <form asp-action="DossiersNT" method="get">
+                <div> <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" /><input type="submit" value="Search" class="btn btn-default" /></div>
+                </form>                   <a asp-action="Create"target="_blank"> <button class="add_new">+ Ajoute un employe</button></a> </div>
+                  
+            </div>
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr><h3>
+                            <th><h3>Numero_retraite</h3></th>  
+                           <th><h3>Nom</h3></th>
+                           <th><h3>prenom</h3></th>
+                            <th><h3>Date de naissance</h3></th>
+                            <th><h3>Action</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model) {
+                      <tr>
+                        <td>@Html.DisplayFor(modelItem => item.DossierId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.EmployeeName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.EmployeePrenom)</td>
+                        <td>@Html.DisplayFor(modelItem => item.DeteNaissance)</td>
+                        <td> 
+                          <button><a class="fa-solid fa-circle-plus"href="testt.html" target="_blank"></a></button>
+                          <button ><a class="fa-solid fa-pen-to-square"asp-controller="Dossiers1" asp-action="Edit" asp-route-id="@item.DossierId"target="_blank"></a></button>              
+                          <button><a class="fa-solid fa-trash"asp-controller="Dossiers1" asp-action="Delete" asp-route-id="@item.DossierId" target="_blank"></a></button>
+                         </td>
+                       
+                      
+                    </tr>
+                   }
+
+                </table>                 
+
+    
+ 

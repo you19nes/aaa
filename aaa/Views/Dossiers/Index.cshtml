@@ -1,0 +1,100 @@
+﻿@model Dossier
+
+@{
+    Layout= null;
+}
+
+ <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/style_employes.css">
+  </head>
+  <body><html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerer les dossier en etat de creation</title>
+        <link rel="stylesheet" href="~/css/dossiers_tout les etat.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    </head>
+    
+    <body>
+
+                 <div class="table">
+            <div class="table_header">
+                <h3 style="color:rgb(0, 140, 255) ;">Dossier en etat creation</h3>
+
+                <form asp-action="Index" method="get">
+                <div> <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+                    <a class="fa-solid fa-magnifying-glass" value="Search" target="_blank"></a></div>
+                </form>
+                
+               
+                
+                
+
+            </div>
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr><h3>
+                            <th><h3>Numero_retraite</h3></th>  
+                           <th><h3> @Html.DisplayNameFor(model => model.EmployeeName)</h3></th>
+                           <th><h3> @Html.DisplayNameFor(model => model.EmployeePrenom)</h3></th>
+                            <th><h3>@Html.DisplayNameFor(model => model.DeteNaissance)</h3></th>
+                           
+                            <th><h3>l'etape</h3></th>
+                             <th><h3>cree Attestion De Salaires</h3></th>
+                            <th><h3>Action</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+
+                       (var item in Model) {
+
+
+                             @for(int  i=0 ; i < 3; i++)
+
+                            {
+                                <tr>
+                        
+                        <td>@Html.DisplayFor(model => model.EmployeeName)</td>
+
+                        <td>@Html.DisplayFor(model=> model.EmployeePrenom)</td>
+
+                        <td>@Html.DisplayFor(model=> model.DeteNaissance)</td>
+                        <td ><button ><a  class="fa-solid fa-circle-plus"href="" target="_blank"></a></button></td> 
+                         <td ><button><a  class="fa-solid fa-trash" asp-action="creatmut" asp-route-id="model.DossierId "target="_blank"></a></button></td>
+
+                        <td> 
+                          <button ><a  class="fa-solid fa-pen-to-square"asp-controller="Dossiers1" asp-action="Edit" asp-route-id="model.DossierId" target="_blank"></a></button>              
+                          <button ><a  class="fa-solid fa-trash"asp-controller="Dossiers1" asp-action="Delete" asp-route-id="model.DossierId" target="_blank"></a></button>
+                         </td>
+                       
+                      
+                    </tr>
+                            }
+                            @* int i = 0;
+                            do{*@
+
+                        
+                    }
+                   @* while( i >=3);*@
+                        
+                    
+                    
+                
+                   
+    
+                </table>
+            </div>
+            
+          </body>
+    
+    </html>   
+
+  </body>

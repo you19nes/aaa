@@ -1,0 +1,69 @@
+﻿@model aaa.Models.AttestionDeSalaire
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AttestionDeSalaire</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Employee.Address)
+        </dd class>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AttestionDeSalaireAnnee)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AttestionDeSalaireAnnee)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PériondesD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PériondesD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PériondesA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PériondesA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DuréeDuTravail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DuréeDuTravail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalaireSoumisRetenue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalaireSoumisRetenue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DésignationDeLemploi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DésignationDeLemploi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesiguationDeLaClasseDallocation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesiguationDeLaClasseDallocation)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="AttestionDeSalaireId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,180 @@
+﻿@model aaa.Models.Dossier
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Dossier</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmployeeName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmployeeName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmployeePrenom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmployeePrenom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DeteNaissance)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DeteNaissance)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Adressedenaissence)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Adressedenaissence)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NaissanceWilaya)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NaissanceWilaya)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Titredecivilite)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Titredecivilite)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lemployeursoussigné)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lemployeursoussigné)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NSSEMPLOYEUR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NSSEMPLOYEUR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NASASSURE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NASASSURE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Qualite)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Qualite)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroAllocationFamilailes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroAllocationFamilailes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroAllocationAssure)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroAllocationAssure)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroSocialesFamilailes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroSocialesFamilailes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroSocialesAssure)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroSocialesAssure)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DubutTravail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DubutTravail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinTravail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinTravail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.pre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.pre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParronPere)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParronPere)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Parronmere)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Parronmere)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.makan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.makan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.wilaia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.wilaia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mihna)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mihna)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.onwan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.onwan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.safha)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.safha)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Etat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Etat)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DossierId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

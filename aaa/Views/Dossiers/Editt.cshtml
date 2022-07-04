@@ -1,0 +1,320 @@
+﻿@model aaa.Models.Dossier
+
+@{
+    ViewData["Title"] = "Editt";
+}
+
+<h1>Editt</h1>
+
+<h4>Dossier</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editt">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DossierId" />
+            <div class="form-group">
+                <label asp-for="EmployeeName" class="control-label"></label>
+                <input asp-for="EmployeeName" class="form-control" />
+                <span asp-validation-for="EmployeeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployeePrenom" class="control-label"></label>
+                <input asp-for="EmployeePrenom" class="form-control" />
+                <span asp-validation-for="EmployeePrenom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeteNaissance" class="control-label"></label>
+                <input asp-for="DeteNaissance" class="form-control" />
+                <span asp-validation-for="DeteNaissance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Adressedenaissence" class="control-label"></label>
+                <input asp-for="Adressedenaissence" class="form-control" />
+                <span asp-validation-for="Adressedenaissence" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NaissanceWilaya" class="control-label"></label>
+                <input asp-for="NaissanceWilaya" class="form-control" />
+                <span asp-validation-for="NaissanceWilaya" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Titredecivilite" class="control-label"></label>
+                <input asp-for="Titredecivilite" class="form-control" />
+                <span asp-validation-for="Titredecivilite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lemployeursoussigné" class="control-label"></label>
+                <input asp-for="Lemployeursoussigné" class="form-control" />
+                <span asp-validation-for="Lemployeursoussigné" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NSSEMPLOYEUR" class="control-label"></label>
+                <input asp-for="NSSEMPLOYEUR" class="form-control" />
+                <span asp-validation-for="NSSEMPLOYEUR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NASASSURE" class="control-label"></label>
+                <input asp-for="NASASSURE" class="form-control" />
+                <span asp-validation-for="NASASSURE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Qualite" class="control-label"></label>
+                <input asp-for="Qualite" class="form-control" />
+                <span asp-validation-for="Qualite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroAllocationFamilailes" class="control-label"></label>
+                <input asp-for="NumeroAllocationFamilailes" class="form-control" />
+                <span asp-validation-for="NumeroAllocationFamilailes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroAllocationAssure" class="control-label"></label>
+                <input asp-for="NumeroAllocationAssure" class="form-control" />
+                <span asp-validation-for="NumeroAllocationAssure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroSocialesFamilailes" class="control-label"></label>
+                <input asp-for="NumeroSocialesFamilailes" class="form-control" />
+                <span asp-validation-for="NumeroSocialesFamilailes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroSocialesAssure" class="control-label"></label>
+                <input asp-for="NumeroSocialesAssure" class="form-control" />
+                <span asp-validation-for="NumeroSocialesAssure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DubutTravail" class="control-label"></label>
+                <input asp-for="DubutTravail" class="form-control" />
+                <span asp-validation-for="DubutTravail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinTravail" class="control-label"></label>
+                <input asp-for="FinTravail" class="form-control" />
+                <span asp-validation-for="FinTravail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nom" class="control-label"></label>
+                <input asp-for="nom" class="form-control" />
+                <span asp-validation-for="nom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pre" class="control-label"></label>
+                <input asp-for="pre" class="form-control" />
+                <span asp-validation-for="pre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ParronPere" class="control-label"></label>
+                <input asp-for="ParronPere" class="form-control" />
+                <span asp-validation-for="ParronPere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Parronmere" class="control-label"></label>
+                <input asp-for="Parronmere" class="form-control" />
+                <span asp-validation-for="Parronmere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="makan" class="control-label"></label>
+                <input asp-for="makan" class="form-control" />
+                <span asp-validation-for="makan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="wilaia" class="control-label"></label>
+                <input asp-for="wilaia" class="form-control" />
+                <span asp-validation-for="wilaia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mihna" class="control-label"></label>
+                <input asp-for="mihna" class="form-control" />
+                <span asp-validation-for="mihna" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="onwan" class="control-label"></label>
+                <input asp-for="onwan" class="form-control" />
+                <span asp-validation-for="onwan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="safha" class="control-label"></label>
+                <input asp-for="safha" class="form-control" />
+                <span asp-validation-for="safha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Etat" class="control-label"></label>
+                <input asp-for="Etat" class="form-control" />
+                <span asp-validation-for="Etat" class="text-danger"></span>
+            </div>
+            <div class="form-horizontal">  
+      <hr />  
+        <div class="form-group">  
+            <h5 class="btn btn-primary">Customer Type Master</h5>  
+            <div class="col-md-12">  
+                <table class="table table-hover col-md-3">  
+                 <thead>    
+                        <tr>  
+                            <th>  
+                                Attestion De Salaire Annee  
+                            </th>  
+                            <th>  
+                                 DU  
+                            </th>  
+                            <th>  
+                                AU  
+                            </th>
+                            <th>  
+                                Durée Du Travail  
+                            </th>
+                            <th>  
+                                SalaireSoumisRetenue  
+                            </th>
+                            <th>  
+                                DésignationDeLemploi  
+                            </th>
+                            <th>  
+                                Desiguation De La Classe Dallocation  
+                            </th>
+  
+                        </tr>  
+                        </thead>
+
+
+                         <tbody>
+                                               @* @foreach (var item in Model.Experiences)*@
+                                               @for (int i=0;i<Model.AttestionDeSalaires.Count;i++)
+                                               {
+                                                   <tr>
+                                                       <td>
+                                                           @*Html.EditorFor(x=>x.Experiences[i].CompanyName,new {HtmlAttributes=new{@class ="form-control"}})*@
+                                                           <input asp-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="form-control" />
+                                                            <span asp-validation-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="taxt-danger"></span>
+                                                       </td>
+                                                       <td>
+                                                           @*Html.EditorFor(x=>x.Experiences[i].CompanyName,new {HtmlAttributes=new{@class ="form-control"}})*@
+                                                           <input asp-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="form-control" />
+                                                            <span asp-validation-for="@Model.AttestionDeSalaires[i].PériondesD" class="taxt-danger"></span>
+                                                       </td>
+                                                       <td>
+                                                           @*Html.EditorFor(x=>x.Experiences[i].CompanyName,new {HtmlAttributes=new{@class ="form-control"}})*@
+                                                           <input asp-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="form-control" />
+                                                            <span asp-validation-for="@Model.AttestionDeSalaires[i].PériondesA" class="taxt-danger"></span>
+                                                       </td>
+                                                       <td>
+                                                           @*Html.EditorFor(x=>x.Experiences[i].CompanyName,new {HtmlAttributes=new{@class ="form-control"}})*@
+                                                           <input asp-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="form-control" />
+                                                            <span asp-validation-for="@Model.AttestionDeSalaires[i].DuréeDuTravail" class="taxt-danger"></span>
+                                                       </td>
+                                                       <td>
+                                                           @*Html.EditorFor(x=>x.Experiences[i].CompanyName,new {HtmlAttributes=new{@class ="form-control"}})*@
+                                                           <input asp-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="form-control" />
+                                                            <span asp-validation-for="@Model.AttestionDeSalaires[i].SalaireSoumisRetenue" class="taxt-danger"></span>
+                                                       </td>
+                                                        <td>
+                                                           @*Html.EditorFor(x=>x.Experiences[i].CompanyName,new {HtmlAttributes=new{@class ="form-control"}})*@
+                                                           <input asp-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="form-control" />
+                                                            <span asp-validation-for="@Model.AttestionDeSalaires[i].DésignationDeLemploi" class="taxt-danger"></span>
+                                                       </td>
+                                                       <td>
+                                                           @*Html.EditorFor(x=>x.Experiences[i].CompanyName,new {HtmlAttributes=new{@class ="form-control"}})*@
+                                                           <input asp-for="@Model.AttestionDeSalaires[i].AttestionDeSalaireAnnee" class="form-control" />
+                                                            <span asp-validation-for="@Model.AttestionDeSalaires[i].DesiguationDeLaClasseDallocation" class="taxt-danger"></span>
+                                                       </td>
+                                                       <td>
+                                                           <button id='btndummy-@i' type="button"class="btn  btn-sm invisible">Du m my</button>
+                                                           <button id='btnadd-@i' type="button" class="btn btn-sm btn-secondary visible"
+                                                                         onclick="AddItem(this)"
+                                                                         style="left:94%;position:absolute;">
+                                                                         Add
+                                                            </button>
+                                                           <button id='btnremove-@i' type="button" class="btn btn-sm btn-danger invisible"
+                                                                onclick="DeleteItem(this)"
+                                                                style="left:88%;position:absolute;">Delete</button>
+                                                       </td>
+
+                                                   </tr>
+                                               }
+                                            </tbody>
+                                               }
+                                        
+                </table>  
+            </div>  
+        </div>  
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+             <div class="col-md-12">
+                                        
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+	<script type="text/javascript">		
+		$(".custom-file-input").on("change", function () {
+			var fileName = $(this).val().split("\\").pop();
+			$(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+		});
+
+
+
+		function DeleteItem(btn) {
+			$(btn).closest('tr').remove();
+		}
+
+
+
+		function AddItem(btn) {
+
+			var table = document.getElementById('ExpTable');
+			var rows = table.getElementsByTagName('tr');
+
+			var rowOuterHtml = rows[rows.length - 1].outerHTML;
+
+			var lastrowIdx = document.getElementById('hdnLastIndex').value;
+
+			var nextrowIdx = eval(lastrowIdx) + 1;
+
+			document.getElementById('hdnLastIndex').value = nextrowIdx;
+
+			rowOuterHtml = rowOuterHtml.replaceAll('_' + lastrowIdx + '_', '_' + nextrowIdx + '_');
+			rowOuterHtml = rowOuterHtml.replaceAll('[' + lastrowIdx + ']', '[' + nextrowIdx + ']');
+			rowOuterHtml = rowOuterHtml.replaceAll('-' + lastrowIdx, '-' + nextrowIdx);
+
+
+			var newRow = table.insertRow();
+			newRow.innerHTML = rowOuterHtml;
+
+
+
+			var btnAddID = btn.id;
+			var btnDeleteid = btnAddID.replaceAll('btnadd', 'btnremove');
+
+			var delbtn = document.getElementById(btnDeleteid);
+			delbtn.classList.add("visible");
+			delbtn.classList.remove("invisible");
+
+
+			var addbtn = document.getElementById(btnAddID);
+			addbtn.classList.remove("visible");
+			addbtn.classList.add("invisible");
+
+            rebindvalidators();
+		}
+        function rebindvalidators(){
+            var $form = $("#ApplicantForm")
+            $form.unbind();
+            $form.data("validator", null);
+            $.validator.unobtrusive.parse($form);
+            $form.validate($form.data("unobtrusiveValidation").options);
+        }
+	</script>
+}

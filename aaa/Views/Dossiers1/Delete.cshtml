@@ -1,0 +1,47 @@
+﻿@model aaa.Models.Dossier
+
+@{
+    Layout= null;
+}
+
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+
+
+
+            <h3 style="color: red;text-align: center;">Es-tu sûr de vouloir le supprimer !</h3>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nom</th>
+        <th scope="col"style="color:blue;">@Html.DisplayFor(model => model.EmployeeName)</th>
+     
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+     
+      <tr>
+        <th scope="col">Prenom</th>
+        <th scope="col"style="color:blue;" >@Html.DisplayFor(model => model.EmployeePrenom)</th>
+      </tr>
+      
+           <tr>
+        <th scope="col">Adresse</th>
+        <th scope="col"style="color:blue;">@Html.DisplayFor(model => model.Address)</th>
+      </tr>
+      <tr>
+        <th scope="col"> Date de naissence</th>
+        <th scope="col"style="color:blue;">@Html.DisplayFor(model => model.DeteNaissance)</th>
+      </tr>
+    </tbody>
+  </table>
+   <form asp-action="Delete">
+        <input type="hidden" asp-for="DossierId" />
+        <input type="submit" value="Delete" class="btn btn-outline-danger" /> |
+        <a asp-action="Index" class="btn btn-outline-primary">Back to List</a>
+    </form>
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
