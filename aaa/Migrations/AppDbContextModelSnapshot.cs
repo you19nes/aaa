@@ -44,22 +44,6 @@ namespace aaa.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "ed58a605-7838-4105-9ceb-f0a59d69256a",
-                            ConcurrencyStamp = "82d90b9d-46cf-48c0-8882-7c25dc3f5ab4",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        },
-                        new
-                        {
-                            Id = "ed58a605-7838-4107-9ceb-f0a59d69256a",
-                            ConcurrencyStamp = "213349a4-d1f9-4f73-80a3-bf419ed5f582",
-                            Name = "User",
-                            NormalizedName = "USER"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -407,9 +391,11 @@ namespace aaa.Migrations
                         .HasColumnType("varchar(12)");
 
                     b.Property<string>("ParronPere")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Parronmere")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Qualite")
