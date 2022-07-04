@@ -14,5 +14,15 @@ namespace aaa.Data
         public DbSet<AttestionTravail> AttestionTravails { get; set; }
         public DbSet<AttestionDeSalaire> AttestionDeSalaires { get; set; }
         public DbSet<AttestionDeCesseison> AttestionDeCesseisons { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+
+            // fill data via ContextSeed
+            modelBuilder.UsersAndRolesCreate();
+        }
     }
 }
